@@ -7,9 +7,6 @@ import { FiHome, FiUser, FiMail } from "react-icons/fi";
 import { GiNetworkBars } from "react-icons/gi";
 import { GrNetwork } from "react-icons/gr";
 import HomeContent from "./components/Home";
-import MetaData from "./components/MetaData";
-
-export { MetaData };
 
 export default function Home() {
     const typingTexts = ["It's Me", "I'm Programmer", "I'm Engineer"];
