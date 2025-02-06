@@ -7,6 +7,7 @@ import { FiHome, FiUser, FiMail } from "react-icons/fi";
 import { GiNetworkBars } from "react-icons/gi";
 import { GrNetwork } from "react-icons/gr";
 import HomeContent from "./components/Home";
+import AboutContent from "./components/About";
 
 export default function Home() {
     const typingTexts = ["It's Me", "I'm Programmer", "I'm Engineer"];
@@ -133,7 +134,7 @@ export default function Home() {
                     <AnimatePresence mode="wait">
                         <motion.section key={activeCard} variants={cardVariants} initial="hidden" animate="visible" exit="exit" className="bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col items-center text-center">
                             {activeCard === "home" && <HomeContent onStart={() => setShowContent(true)} />}
-                            {activeCard === "about" && <h2 className="text-4xl font-semibold text-blue-300">About Me</h2>}
+                            {activeCard === "about" && <AboutContent />}
                             {activeCard === "skills" && <h2 className="text-4xl font-semibold text-blue-300">Skills</h2>}
                             {activeCard === "projects" && <h2 className="text-4xl font-semibold text-blue-300">Projects</h2>}
                             {activeCard === "contact" && <h2 className="text-4xl font-semibold text-blue-300">Contact</h2>}
