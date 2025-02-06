@@ -37,6 +37,7 @@ export default function HomeContent({ onStart }: { onStart: () => void }) {
                     hover:from-blue-500 hover:to-blue-700 transition-all transform hover:scale-105"
                     whileHover={{ scale: 1.1, boxShadow: "0px 0px 20px rgba(59, 130, 246, 0.8)" }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={onStart}
                     >
                     Welcome
                     </motion.h1>
