@@ -7,6 +7,9 @@ import { FiHome, FiUser, FiMail } from "react-icons/fi";
 import { GiNetworkBars } from "react-icons/gi";
 import { GrNetwork } from "react-icons/gr";
 import HomeContent from "./components/Home";
+import MetaData from "./components/MetaData";
+
+export { MetaData };
 
 export default function Home() {
     const typingTexts = ["It's Me", "I'm Programmer", "I'm Engineer"];
@@ -104,7 +107,7 @@ export default function Home() {
             >
                 <div className="relative w-40 h-40 mb-6">
                     <Image
-                        src="/your-photo.jpg"
+                        src="/profil.jpg"
                         alt="Profile Picture"
                         layout="fill"
                         objectFit="cover"
@@ -116,14 +119,16 @@ export default function Home() {
                     <span className="animate-blink">|</span>
                 </h2>
                 <p className="text-gray-300 text-lg mt-4">Nafil Habibi Mulyadi</p>
-                <motion.button 
-                    className="mt-6 px-8 py-4 bg-blue-500 text-white font-semibold rounded-full shadow-lg hover:bg-blue-400 transition transform hover:scale-110 active:scale-95 border border-blue-300"
-                    whileHover={{ scale: 1.1, boxShadow: "0px 0px 15px rgba(59, 130, 246, 0.8)" }}
-                    whileTap={{ scale: 0.9 }}
+                <motion.button
+                    className="mt-6 px-10 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl shadow-xl 
+                    hover:from-blue-600 hover:to-indigo-700 transition-all transform hover:scale-105 active:scale-95 
+                    border-2 border-transparent hover:border-blue-300 focus:ring-4 focus:ring-blue-300"
+                    whileHover={{ scale: 1.08, boxShadow: "0px 5px 20px rgba(59, 130, 246, 0.6)" }}
+                    whileTap={{ scale: 0.95 }}
                     onClick={() => setShowContent(true)}
-                >
+                    >
                     Get Started
-                </motion.button>
+                    </motion.button>
             </motion.div>
         </motion.main>
             ) : (

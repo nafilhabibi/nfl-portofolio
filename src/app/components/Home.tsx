@@ -22,7 +22,7 @@ export default function HomeContent({ onStart }: { onStart: () => void }) {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    Welcome to My Portfolio
+                    Holaa, Visitor
                 </motion.h2>
                 <motion.p 
                     className="text-gray-300 mt-4 text-lg"
@@ -32,14 +32,14 @@ export default function HomeContent({ onStart }: { onStart: () => void }) {
                 >
                     Discover my work, skills, and projects.
                 </motion.p>
-                <motion.button 
-                    className="mt-6 px-8 py-4 bg-blue-500 text-white font-semibold rounded-full shadow-lg hover:bg-blue-400 transition transform hover:scale-110 active:scale-95 border border-blue-300"
-                    whileHover={{ scale: 1.1, boxShadow: "0px 0px 15px rgba(59, 130, 246, 0.8)" }}
-                    whileTap={{ scale: 0.9 }}
-                    onClick={onStart}
-                >
-                    Get Started
-                </motion.button>
+                <motion.h1
+                    className="mt-6 px-6 py-3 text-3xl font-bold text-gray-900 border-4 border-blue-500 rounded-lg shadow-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white 
+                    hover:from-blue-500 hover:to-blue-700 transition-all transform hover:scale-105"
+                    whileHover={{ scale: 1.1, boxShadow: "0px 0px 20px rgba(59, 130, 246, 0.8)" }}
+                    whileTap={{ scale: 0.95 }}
+                    >
+                    Welcome
+                    </motion.h1>
             </div>
             
             {/* Illustration */}
