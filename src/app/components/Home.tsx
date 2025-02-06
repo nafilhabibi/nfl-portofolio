@@ -43,7 +43,11 @@ export default function HomeContent({ onStart }: { onStart: () => void }) {
             </div>
             
             {/* Illustration */}
-            <div className="relative">
+            <div 
+                className="relative"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+            >
                 <motion.img
                     whileHover={{ scale: 1.05 }}
                     src="/robot-illus.png" 
