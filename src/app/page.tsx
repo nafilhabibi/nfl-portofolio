@@ -8,6 +8,7 @@ import { GiNetworkBars } from "react-icons/gi";
 import { GrNetwork } from "react-icons/gr";
 import HomeContent from "./components/Home";
 import AboutContent from "./components/About";
+import SkillsShowcase from "./components/Skills"
 
 export default function Home() {
     const typingTexts = ["It's Me", "I'm Programmer", "I'm Engineer"];
@@ -135,7 +136,7 @@ export default function Home() {
                         <motion.section key={activeCard} variants={cardVariants} initial="hidden" animate="visible" exit="exit" className="bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col items-center text-center">
                             {activeCard === "home" && <HomeContent onStart={() => setShowContent(true)} />}
                             {activeCard === "about" && <AboutContent />}
-                            {activeCard === "skills" && <h2 className="text-4xl font-semibold text-blue-300">Skills</h2>}
+                            {activeCard === "skills" && <SkillsShowcase />}
                             {activeCard === "projects" && <h2 className="text-4xl font-semibold text-blue-300">Projects</h2>}
                             {activeCard === "contact" && <h2 className="text-4xl font-semibold text-blue-300">Contact</h2>}
                         </motion.section>
